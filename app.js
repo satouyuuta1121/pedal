@@ -1,0 +1,9 @@
+$(function(){
+    $(".js-password-check").change(function(){
+        if($(this).prop("checked")){
+            $(".js-password").attr("type","text");
+        }else{
+            $(".js-password").attr("type","password");
+        }
+    });
+});
